@@ -1,3 +1,67 @@
+// // src/components/Sidebar.tsx
+// import React from "react";
+// import { CommentedHighlight, Bookmark } from "../types";
+
+// export interface SidebarProps {
+//   highlights: CommentedHighlight[];
+//   comments: CommentedHighlight[];
+//   bookmarks: Bookmark[];
+//   resetHighlights: () => void;
+//   resetComments: () => void;
+//   resetBookmarks: () => void;
+//   toggleDocument: () => void;
+// }
+
+// const Sidebar: React.FC<SidebarProps> = ({
+//   highlights,
+//   comments,
+//   bookmarks,
+//   resetHighlights,
+//   resetComments,
+//   resetBookmarks,
+//   toggleDocument,
+// }) => (
+//   <div className="Sidebar">
+//     <button onClick={toggleDocument}>Toggle PDF</button>
+
+//     <h3>Highlights</h3>
+//     {highlights.map((h) => (
+//       <div key={h.id}>{h.content?.text || "(image)"}</div>
+//     ))}
+//     <button onClick={resetHighlights}>Clear Highlights</button>
+
+//     <h3>Comments</h3>
+//     {comments.map((c) => (
+//       <div key={c.id}>{c.comment}</div>
+//     ))}
+//     <button onClick={resetComments}>Clear Comments</button>
+
+//     <h3>Bookmarks</h3>
+//     {bookmarks.map((b) => (
+//       <div key={b.id}>Page {b.pageNumber}</div>
+//     ))}
+//     <button onClick={resetBookmarks}>Clear Bookmarks</button>
+//   </div>
+// );
+
+// export default Sidebar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import type { Highlight } from "../react-pdf-highlighter-extended";
 import "./style/Sidebar.css";

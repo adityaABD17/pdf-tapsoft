@@ -119,6 +119,7 @@ export interface Highlight {
  */
 export interface GhostHighlight extends Required<Omit<Highlight, "id">> {
   content: Content;
+  
 }
 
 /**

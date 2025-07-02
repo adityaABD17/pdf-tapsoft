@@ -52,3 +52,70 @@ const Toolbar = ({ setPdfScaleValue, toggleHighlightPen }: ToolbarProps) => {
 };
 
 export default Toolbar;
+// src/components/Toolbar.tsx
+// src/components/Toolbar.tsx
+// import React, { useState } from "react";
+// import "./style/Toolbar.css";
+
+// export type Mode = "highlight" | "comment" | "bookmark";
+
+// export interface ToolbarProps {
+//   setPdfScaleValue: (v: number) => void;
+//   mode: Mode;
+//   onModeChange: (m: Mode) => void;
+//   onBookmark: () => void;
+//   disabled?: boolean;
+// }
+
+// const Toolbar: React.FC<ToolbarProps> = ({
+//   setPdfScaleValue,
+//   mode,
+//   onModeChange,
+//   onBookmark,
+//   disabled = false,
+// }) => {
+//   const [zoom, setZoom] = useState(1);
+
+//   const inc = () => {
+//     const next = Math.min(4, +(zoom + 0.1).toFixed(2));
+//     setZoom(next);
+//     setPdfScaleValue(next);
+//   };
+//   const dec = () => {
+//     const next = Math.max(0.2, +(zoom - 0.1).toFixed(2));
+//     setZoom(next);
+//     setPdfScaleValue(next);
+//   };
+
+//   return (
+//     <div className={`Toolbar ${disabled ? "Toolbar--disabled" : ""}`}>
+//       <button onClick={inc} disabled={disabled}>+</button>
+//       <button onClick={dec} disabled={disabled}>–</button>
+//       <span>{Math.round(zoom * 100)}%</span>
+
+//       <button
+//         className={mode === "highlight" ? "active" : ""}
+//         onClick={() => onModeChange("highlight")}
+//         disabled={disabled}
+//       >
+//         Highlight
+//       </button>
+//       <button
+//         className={mode === "comment" ? "active" : ""}
+//         onClick={() => onModeChange("comment")}
+//         disabled={disabled}
+//       >
+//         Comment
+//       </button>
+//       <button
+//         className={mode === "bookmark" ? "active" : ""}
+//         onClick={onBookmark}
+//         disabled={disabled}
+//       >
+//         Bookmark
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default Toolbar;
